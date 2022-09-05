@@ -1,0 +1,43 @@
+.magnify.icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  color: #000;
+  position: absolute;
+  border: 1px solid currentColor;
+  transform: rotate(-45deg);
+  margin-top: 2px;
+  margin-left: 3px;
+}
+
+.magnify.icon:before{
+  content: '';
+  position: absolute;
+  height: 6px;
+  width: 1px;
+  top: 12px;
+  left: 6px;
+  background-color: currentColor;
+}
+
+.magnify.icon i {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  transform: rotate(45deg);
+}
+.magnify.icon i::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  background-color: currentColor;
+}
+.magnify.icon i:after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  background-color: currentColor;
+  transform: rotate(90deg);
+}
