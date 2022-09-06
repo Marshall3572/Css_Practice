@@ -1,3 +1,4 @@
+/* magnify */
 .magnify.icon {
   width: 12px;
   height: 12px;
@@ -37,6 +38,7 @@
   transform: rotate(90deg);
 }
 
+/* minify */
 .minify.icon {
   color: #000;
   width: 12px;
@@ -63,4 +65,53 @@
   left: 5px;
   transform: rotate(-45deg);
   background-color: currentColor;
+}
+
+/* close */
+.close.icon {
+  color: #000;
+  width: 12px;
+  height: 12px;
+}
+.close.icon:before {
+  content: '';
+  position: absolute;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+  transform: rotate(-45deg);
+  top: 8px;
+}
+.close.icon:after {
+  content: '';
+  position: absolute;
+  width: 17px;
+  height: 1px;
+  background-color: currentColor;
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+/* plus */
+.plus.icon {
+  color: #000;
+  width: 12px;
+  height: 12px;
+}
+.plus.icon:before {
+  content: '';
+  height: 1px;
+  width: 17px;
+  background: currentColor;
+  position: absolute;
+  top: 8px;
+}
+.plus.icon:after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 17px;
+  background: currentColor;
+  transform: rotate(90deg);
+  top: 8px;
 }
